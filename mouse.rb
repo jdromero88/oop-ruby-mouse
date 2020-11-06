@@ -14,7 +14,7 @@ class Mouse
   end
 
   def color=(color)
-    @modelo = color
+    @color = color
   end
   def color
     @color
@@ -41,3 +41,31 @@ razerX = Mouse.new #Creamos una instancia de la clase mouse. Creamos un nuevo mo
 # las acciones que realizan, click_derecho, click_izquierdo, double_click
 logitechg502.marca = "Logitech" # le asignamos la marca Logitech
 logitechg502.modelo = "G502" # asignamos el modelo G502
+logitechg502.color = "blanco" # asignamos color blanco
+
+razerX.marca = "Razer"
+razerX.modelo = "X"
+razerX.color = "negro"
+
+puts '####################'
+#mostramos los datos del objeto logitechg502
+puts logitechg502.marca
+puts logitechg502.modelo
+puts logitechg502.color
+puts '####################'
+
+
+puts '####################'
+#mostramos los datos del objeto razerX
+puts razerX.marca
+puts razerX.modelo
+puts razerX.color
+puts '####################'
+
+# Y aqui estan las acciones que pueden realizar
+logitechg502.click_derecho
+razerX.click_derecho
+logitechg502.click_izquierdo
+razerX.click_izquierdo
+logitechg502.double_click
+razerX.double_click
